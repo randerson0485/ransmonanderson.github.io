@@ -1,0 +1,15 @@
+.footerSection{
+	display: flex;
+	background-color: $main-color-2;
+	height: 5em;
+	width: 100%;
+	padding: 5%;
+	justify-content: center;
+	margin-top: 5%;
+	border-top: solid .1em $main-color-3;
+
+	p, span{
+		color: $accent-color;
+		margin: 0 auto;
+	}
+}
