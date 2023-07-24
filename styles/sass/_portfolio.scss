@@ -1,0 +1,138 @@
+.portfolioSection{
+	padding-top: 5px;
+	width: 100%;
+
+	@media (max-width: 1024px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h2{
+		font-size: 4em;
+		text-transform: capitalize;
+		color: $main-color-3;
+		margin: 0 auto;
+		text-align: center;
+		margin: 2% 0;
+	}
+}
+.portfolioContainer{
+	background-color: $main-color-2;
+    width: $cardWidth;
+    display: flex;
+	flex-direction: column;
+    padding: 15px 8px 25px;
+    border-radius: 20px; 
+	margin: 30px auto;
+
+	@media(min-width: 768px){
+		margin-left: 58px;
+	}
+	@media(min-width: 1024px){
+		margin-left: 70px;
+	}
+}
+.portfolioCard{
+    background-color: $main-color-2;
+    position: relative;
+	display: flex;
+	height: 22rem;
+	width: 96%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	border-radius: 20px;
+	justify-content: center;
+
+	@media(min-width: 1024px){
+		width: 70%;
+	}
+    
+	:hover .overlay {
+        opacity: 70;
+      }
+    }
+.portfolioImages{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+	@media(min-width: 768px){
+		width: 70%;
+	}
+}
+.portfolioCard:hover .overlay {
+	opacity: 70;
+  }
+.overlay{
+	position: absolute;
+	left: 97;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.847);
+	width: 100%;
+	height: 100%;
+	border: $border;
+	transition: opacity 0.3s;
+	justify-content: center;
+
+	@media(min-width: 768px){
+		width: 70%;
+	}
+	h3{
+		font-size: 1.5em;
+    	padding: 4% 0 0 0;
+		text-align: center;
+		color: $main-color-3;
+	}
+	p{
+		font-size: 1rem;
+		text-align: center;
+		padding: 0 2%;
+		color: $main-color-3;
+
+		@media (min-width: 400px){
+			font-size: 1.5rem;
+		}
+	}
+	.portfolioUnordered{
+		width: 80%;
+		font-size: 1.5rem;
+		margin: 20px auto 0 auto;
+		padding: 5px 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		li{
+			list-style: none;
+			background-color: $main-color;
+			color: $main-color-3;
+			padding: 5px 10px;
+			font-size: large;
+			margin: 5px;
+			border-radius: 50px;
+		}
+	}
+	.viewProject{
+		display: flex;
+		font-size: 1.5rem;
+		margin: 20px auto;
+		padding: 10px 0;
+		width: 80%;
+		text-align: center;
+		white-space: nowrap;
+		justify-content: space-evenly;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+
+
+	
+	
